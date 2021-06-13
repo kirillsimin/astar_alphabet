@@ -154,7 +154,7 @@ def main():
     end = find_end(maze)
 
     path = astar(maze, start, end)
-    solved_maze = build_solved_maze(maze, path)
+    solved_maze = build_solved_maze(build_maze(text), path)
 
     print_solved_maze(solved_maze)
 
