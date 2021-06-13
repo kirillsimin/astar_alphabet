@@ -47,7 +47,7 @@ def astar(maze, start, end):
         closed_list.append(current_node)
 
         #set the current position as blocked for future use
-        maze[current_node.position[0]][current_node.position[1]] = '#'
+        maze[current_node.position[0]][current_node.position[1]] = '*'
 
         # Found the goal
         if current_node == end_node:
@@ -123,6 +123,10 @@ def find_end(maze):
     return (len(maze)-1,maze[-1].index('_'))
 
 def build_solved_maze(maze, path):
+    if path is None:
+        print("Doesn't seem like this maze has a solution.")
+        return []
+
     alphabet = list(map(chr, range(97, 123)))
 
     for i, step in enumerate(path):
