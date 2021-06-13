@@ -1,6 +1,5 @@
 # A * algorithm source code: https://medium.com/@nicholas.w.swift/easy-a-star-pathfinding-7e6689c7f7b2
-
-import sys
+# git gist https://gist.github.com/Nicholas-Swift/003e1932ef2804bebef2710527008f44
 
 class Node():
     """A node class for A* Pathfinding"""
