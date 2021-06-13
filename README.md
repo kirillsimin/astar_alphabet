@@ -39,3 +39,6 @@ If the script is able to find a solution, it will print it out, as follows:
 #g###########
 #h###########
 ~~~~
+
+## Unit Tests
+Run `python3 -m unittest maze_test.py`
